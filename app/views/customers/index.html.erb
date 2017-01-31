@@ -17,6 +17,8 @@
   <% end %>
 </section>
 
+<%= render partial: "pager", locals: { keywords: @keywords, page: @page } %>
+
 <section class="search-results">
   <header>
     <h1 class="h3">Search Results</h1>
@@ -37,3 +39,5 @@
   </ol>
   <% end %>
 </section>
+
+<%= render partial: "pager", locals: { keywords: @keywords, page: @page } %>
