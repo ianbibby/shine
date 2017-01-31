@@ -23,7 +23,7 @@ class CustomerSearchTerm
     @where_args[:email] = starts_with(search_term)
 
     @order = "lower(email) = " +
-      ActionRecord::Base.connecton.quote(search_term) +
+      ActiveRecord::Base.connection.quote(search_term) +
       " desc, last_name asc"
   end
 
