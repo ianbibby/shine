@@ -12,12 +12,8 @@
                name="keywords"
                class="form-control input-lg"
                placeholder="First Name, Last Name or, Email Address"
+               ng-change="search(keywords)"
                ng-model="keywords" />
-        <span class="input-group-btn">
-          <button class="btn btn-primary btn-lg"
-                  ng-click="search(keywords)">
-            Find Customers
-          </button>
         </span>
       </div>
     </form>
