@@ -6,10 +6,14 @@ describe("CustomerSearchController", function() {
 
     beforeEach(inject(function($controller, $rootScope) {
       scope = $rootScope.$new();
+      console.log("foo");
       controller = $controller("CustomerSearchController", {
-        $scope = scope;
+        $scope = scope
       });
-
     }));
+
+    it("is true", function() {
+      expect(true).toBe(true);
+    });
   });
 });
